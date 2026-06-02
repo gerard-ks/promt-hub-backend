@@ -1,0 +1,22 @@
+# Prompt Hub — Backend
+
+API REST (NestJS) pour **Prompt Hub**. 
+
+- **Port** : 3000
+- **Données** : fichier JSON local (`data/db.json`)
+
+## Modes auth (tutoriel)
+
+| Commande | Mode |
+|----------|------|
+| `npm run start` / `npm run start:dev` | Sans auth : créer / modifier / voter sans connexion (utilisateur « Système ») |
+| `npm run start:auth` / `npm run start:auth:dev` | Avec auth : JWT requis pour créer, modifier, voter |
+
+## Lancer le projet
+
+```bash
+npm install
+npm run start          # sans auth
+# ou
+npm run start:auth     # avec auth
+```
